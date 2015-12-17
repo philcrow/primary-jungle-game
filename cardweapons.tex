@@ -1,0 +1,99 @@
+\documentclass[landscape]{article}
+%\documentclass[a4paper,landscape]{article}
+
+\input{include/libs.tex}
+\input{include/colors.tex}
+\input{include/tikzcards.tex}
+
+\newcommand{\cardTitleA}{Attack Ad}
+\newcommand{\cardTitleD}{End Scandal by}
+\newcommand{\cardTitleE}{Endorsement}
+\newcommand{\cardTitleG}{The GENDER Card}
+\newcommand{\cardTitleR}{The RACE Card}
+\newcommand{\cardTitleM}{Money}
+\newcommand{\cardTitleI}{Scandal}
+\newcommand{\cardTitleT}{Speak about}
+\newcommand{\cardTitleS}{Stump for}
+\newcommand{\cardTitleZ}{Teach Candidate}
+\newcommand{\cardTitleW}{Warm Fuzzy Ad}
+
+% Rules by card type, see above for what the card type letter means.
+\newcommand{\playA}{Play it Safe:\\Pay \$30K hard cash\\Roll 1 die, win with 3 or more\\
+Risk it:\\Pay \$50K hard cash $+$ \$200K PAC\\Roll 2 dice, win with 8 or more\\
+\vspace{2mm}
+Positive Effect:\\Take 3 poll points from attacked opponent if you played it safe, or 7 if you took a risk.\\
+\vspace{2mm}
+Negative Effect:\\Give attacked opponent 1 poll point if you played it safe or 6 if you took a risk.\\
+}
+\newcommand{\playD}{Roll one die.\\
+\vspace{2mm}
+Effect:\\
+Collect die value from undecided.\\If there are not that many poll points in undediced, tough luck.\\
+\vspace{2mm}
+Discard this card and the scandal card.
+}
+\newcommand{\playE}{Effect:\\
+Add 1 to your blue roll for each endorsement you have played (including this one) each time you raise money.\\
+Do not discard, unless a scandal befalls your candidate. Follow the scandal's instructions in that case.\\
+}
+\newcommand{\playG}{Attack one opponent.\\
+Each of you rolls 1 die.\\
+Highest roll wins.\\
+Tie goes to the attacked player.\\
+\vspace{2mm}
+Effect:\\
+Winner collects 5 poll points from the loser and keeps this card face up.\\
+The current holder of this card can play it again on any turn, instead of playing a card from their hand.\\
+}
+\newcommand{\playI}{Play against an opponent.\\
+Attacked player rolls 1 die. If it is 3 or less, the scandal takes effect. Otherwise, it is discarded without effect.\\
+\vspace{2mm}
+Effect:\\
+1. Discard 1 endorsement.\\
+2. Roll another die. Lose that many poll points to undecided.\\
+3. Lose one from your blue roll when raising money until the scandal is defeated by a defeat scandal card.\\
+}
+\newcommand{\playR}{Attack one opponent.\\
+Each of you rolls 1 die.\\
+Highest roll wins.\\
+Tie goes to the attacked player.\\
+\vspace{2mm}
+Effect:\\
+Winner collects 10 poll points from the loser and keeps this card face up.\\
+The current holder of this card can play it again on any turn, instead of playing a card from their hand.\\
+}
+\newcommand{\playT}{Play it Safe:\\Roll 1 die, win with 3 or more\\
+Risk it:\\Roll 2 dice, win with 8 or more\\
+\vspace{2mm}
+Positive Effect:\\Gain 1 poll point from each opponent if you played it safe or 2 from each opponent if you took a risk.\\
+\vspace{2mm}
+Negative Effect:\\Roll 1 die if you played safe or 2 if you took a risk. Lose that many poll points to undecided.\\
+}
+\newcommand{\playS}{Name the state where candidate will speak.\\Roll 1 die, win with 3 or more.\\Do not discard.\\
+\vspace{2mm}
+Positive Effect:\\Earn 1 poll point per stump card you have (include this one) plus 2 poll points for each of your field offices in the state.
+Collect from undecided. If undecided is empty, collect from all opponents equally. Except, deduct 1 from an opponent's penalty for each of their
+field offices in the state. If 0 or less, do not collect from that opponent.\\Others still pay their original share.\\
+\vspace{2mm}
+Negative Effect:\\Lose 1 poll point to undecided.\\
+}
+\newcommand{\playW}{Pay \$200K PAC cash.\\
+Roll 1 die, win with 3 or more.\\
+\vspace{2mm}
+Positive Effect:\\Take 4 from undecided. If there are not that many, take the whole pile.\\
+\vspace{2mm}
+Negative Effect:\\None, except for all that poor PAC cash.\\
+}
+\newcommand{\playZ}{Do not discard.\\
+\vspace{2mm}
+Effect:\\Add one to your roll when your candidate speaks.\\Does not apply to Stumping.\\
+}
+
+\begin{document}
+\begin{center}
+    \pagestyle{empty}
+
+    \input{weapons.tex}
+
+\end{center}
+\end{document}

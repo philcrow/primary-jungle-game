@@ -1,0 +1,2 @@
+#!/bin/bash
+latex $1.tex ; dvips $1.dvi > $1.ps ; ps2pdf $1.ps $1.pdf

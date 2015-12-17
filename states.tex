@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\input{include/libs.tex}
+\input{include/tikzstate.tex}
+
+\begin{document}
+\begin{center}
+  \pagestyle{empty}
+  \begin{tikzpicture}
+    \stateborder
+    \statelabel{Iowa}
+    %\statedebug
+  \end{tikzpicture}
+
+  \vspace{2mm}
+  \pagestyle{empty}
+  \begin{tikzpicture}
+    \stateborder
+    \statelabel{New Hampshire}
+    \stateinstruction{Add for 3 or more players}
+    %\statedebug
+  \end{tikzpicture}
+
+  \vspace{2mm}
+  \pagestyle{empty}
+  \begin{tikzpicture}
+    \stateborder
+    \statelabel{South Carolina}
+    \stateinstruction{Add for 5 players}
+    %\statedebug
+  \end{tikzpicture}
+
+\end{center}
+\end{document}

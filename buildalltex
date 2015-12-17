@@ -1,0 +1,21 @@
+#!/bin/bash
+
+./buildonetex calendar
+
+./buildonetex rules
+
+# candidate cards
+./generatecards candidatecontent candidates > candidates.tex
+./buildonetex cardcandidates
+
+# weapons
+./generatecards cardcontent weapons > weapons.tex
+./buildonetex cardweapons
+
+# money
+./buildonetex hard10k
+./buildonetex hard5k
+./buildonetex hard1k
+./buildonetex pac100k
+./buildonetex pac500k
+

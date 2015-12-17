@@ -1,0 +1,32 @@
+% modeled after the cards
+
+\pgfmathsetmacro{\calendarwidth}{10}
+\pgfmathsetmacro{\calendarheight}{20}
+
+
+\newcommand{\billborder}{
+    \draw (0,0) rectangle(\calendarwidth,\calendarheight)
+}
+
+\newcommand{\oddcorners}[1]{
+    \node at (0.75,0.5) {#1};
+    \node at (9.25,4.5) {#1};
+}
+
+\newcommand{\evencorners}[1]{
+    \node at (0.75,4.5) {#1};
+    \node at (9.25,0.5) {#1};
+}
+
+\newcommand{\toplabels}[1]{
+    \node at (5,4.5) {#1 Cash};
+    \node at (5,0.5) {Primary Jungle Note};
+}
+
+\newcommand{\centerlabel}[1]{
+    \node at (5,2.5) {\Huge #1};
+}
+
+\newcommand{\billdebug}{
+    \draw [step=1,help lines] (0,0) grid (\billwidth,\billheight);
+}
